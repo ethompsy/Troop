@@ -94,7 +94,7 @@ class TroopServer(OTServer):
                 self.port += 1
 
         # Is keep alive enabled?
-        self.keepalive_enabled = False
+        self.keepalive_enabled = keepalive
 
         # Reference to the thread that is listening for new connections
         self.server_thread = Thread(target=self.server.serve_forever)

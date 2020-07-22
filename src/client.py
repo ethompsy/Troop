@@ -25,7 +25,7 @@ class Client:
     recv = None
     mainloop_started = False
     keepalive = None
-    timeout = 3
+    timeout = 30
 
     def __init__(self, **kwargs):
 

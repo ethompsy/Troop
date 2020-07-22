@@ -43,7 +43,7 @@ class NetworkMessageReader:
 
         if string == "":
 
-            raise EmptyMessageError()
+            print(EmptyMessageError())
 
         # Join with any existing text
         full_message = self.string + string

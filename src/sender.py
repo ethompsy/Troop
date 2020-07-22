@@ -107,7 +107,7 @@ class Sender:
             
                 print(e)
             
-                raise ConnectionError("Can't connect to server")
+                print(ConnectionError("Can't connect to server"))
         
         return
 

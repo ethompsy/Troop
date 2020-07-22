@@ -72,17 +72,17 @@ class Receiver:
 
                 # We get None if there was a socket error
 
-                if packet is None:
+                # if packet is None:
 
-                    raise EmptyMessageError
+                #     raise EmptyMessageError
 
             except(OSError, socket.error) as e:
 
                 print(e)
 
-                self.kill()
+                # self.kill()
 
-                break
+                # break
 
             # Ignore empty message errors if we are no longer running
 
@@ -90,7 +90,7 @@ class Receiver:
 
                 if self.client.is_alive:
 
-                    raise(e)
+                    print(e)
 
                 else:
 
